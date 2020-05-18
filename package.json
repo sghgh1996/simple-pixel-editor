@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:sghgh1996/simple-pixel-editor.git",
   "author": "Sadjad Ghanbarynasab",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
 }
