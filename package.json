@@ -1,0 +1,9 @@
+{
+  "name": "PixelEditorTask",
+  "version": "1.0.0",
+  "description": "This is the project for the task of iGenius Application",
+  "main": "index.js",
+  "repository": "git@github.com:sghgh1996/simple-pixel-editor.git",
+  "author": "Sadjad Ghanbarynasab",
+  "license": "MIT"
+}
