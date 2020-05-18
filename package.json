@@ -1,11 +1,18 @@
 {
-  "name": "PixelEditorTask",
+  "name": "pixel-editor-task",
   "version": "1.0.0",
   "description": "This is the project for the task of iGenius Application",
   "main": "index.js",
-  "repository": "git@github.com:sghgh1996/simple-pixel-editor.git",
+  "repository": {
+    "url": "git@github.com:sghgh1996/simple-pixel-editor.git",
+    "type": "git"
+  },
   "author": "Sadjad Ghanbarynasab",
   "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "parcel-bundler": "^1.12.4"
   }
