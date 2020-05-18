@@ -18,16 +18,37 @@ html {
 }
 
 .container {
-  width: 900px;
+  width: 780px;
   margin-right: auto;
   margin-left: auto;
 }
 
 .header {
-  height: 50px;
+  height: 60px;
   background-color: #f6f8ff;
   color: #5800ff;
   width: 100%;
-  font-size: 1.5rem;
-  line-height: 3rem;
+  font-size: 21px;
+  line-height: 52px;
+  margin-bottom: 30px;
+}
+
+.selected-color-box {
+  height: 35px;
+  width: 100px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  background-color: #5800ff;
+}
+
+.rgb-slider-box {
+  width: 130px;
+}
+
+.rgb-slider {
+  width: 30px;
+  height: 400px;
+  margin-left: 35px;
+  border-radius: 15px;
+  background: linear-gradient(to bottom,hsl(0,100%,50%),hsl(300,100%,50%),hsl(240,100%,50%),hsl(180,100%,50%),hsl(120,100%,50%),hsl(60,100%,50%),hsl(360,100%,50%));
 }
