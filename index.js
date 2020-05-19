@@ -1,6 +1,6 @@
 console.log('hi');
 
-var slider = document.getElementById("rangeSlider");
+var slider = document.getElementsByClassName('rgb-range-slider')[0];
 var sliderArrowContainer = document.getElementsByClassName('slider-arrow-container')[0];
 var sliderArrowRight = document.getElementsByClassName('slider-arrow-right')[0];
 var sliderArrowLeft = document.getElementsByClassName('slider-arrow-left')[0];
@@ -25,6 +25,7 @@ function fixSlider (sliderValue) {
   selectedColorBox.style.backgroundColor = sliderColor;
   selectedColorBox.innerHTML = HSLToHex(sliderValue, 100, 50);
 }
+
 
 function HSLToHex(h, s, l) {
   s /= 100;
@@ -64,4 +65,14 @@ function HSLToHex(h, s, l) {
     b = "0" + b;
 
   return "#" + r + g + b;
+}
+
+const sizeInputs = document.querySelectorAll('.input-box .input input');
+
+sizeInputs[0].oninput = function(e) {
+  sizeInputs[1].value = e.target.value;
+}
+
+sizeInputs[1].oninput = function(e) {
+  sizeInputs[0].value = e.target.value;
 }
