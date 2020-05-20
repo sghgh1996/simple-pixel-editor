@@ -5,6 +5,7 @@
   <title>Sadjad Ghanbarynasab - iGenius Task</title>
   <link rel="stylesheet" href="assets/styles/app.css">
   <link rel="stylesheet" href="assets/styles//_general.css">
+  <link rel="stylesheet" href="modules/rgb-slider/rgb-slider.css">
 </head>  
 <body>
   <div class="header">
@@ -13,14 +14,7 @@
   <div class="container flex flex-justify-space-between">
     <div class="rgb-slider-col">
       <div class="text-center selected-color-box"></div>
-      <div class="relative slider-container">
-        <input type="range" min="0" max="360" value="180" class="rgb-range-slider">
-        <div class="rgb-slider"></div>
-        <div class="slider-arrow-container flex flex-justify-space-between">
-          <div class="slider-arrow-left"></div>
-          <div class="slider-arrow-right"></div>
-        </div>
-      </div>
+      <div class="relative rgb-slider-container" id="rgb-slider"></div>
     </div>
     <div class="painting-col">
       <div class="input-box flex flex-align-center">
