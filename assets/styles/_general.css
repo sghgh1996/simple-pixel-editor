@@ -57,6 +57,13 @@
   margin-left: 10px;
 }
 
+.mt-3 {
+  margin-top: 20px;
+}
+
+.mb-1 {
+  margin-bottom: 5px;
+}
 .py-1 {
   padding-top: 5px;
   padding-bottom: 5px;
