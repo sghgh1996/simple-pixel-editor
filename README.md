@@ -66,8 +66,8 @@ The download image dimensions needs to be the same as the painting grid ones.
 ## How to run 👟
 
 1. we will use the parcel bundler [docs](https://parceljs.org/getting_started.html)
-2. `npm i` to install deps
-3. `npm start` to start the dev server
+2. `yarn` or `npm i` to install deps
+3. `yarn start` or `npm start` to start the dev server
 4. index.js is the entry file
 
 # Happy coding! 
