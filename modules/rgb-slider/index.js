@@ -1,6 +1,6 @@
 let rgbSlider = function (document) {
   const slider = document.querySelector('#rgb-slider');
-  // Append child nodes
+
   slider.insertAdjacentHTML('beforeend','<input type="range" min="0" max="360" value="180" class="rgb-range-slider" />')
   slider.insertAdjacentHTML('beforeend','<div class="rgb-slider-scale"></div>');
   slider.insertAdjacentHTML('beforeend',
