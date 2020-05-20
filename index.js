@@ -5,7 +5,11 @@ var sliderColor = '#000';
 const rgbSlider = require('./modules/rgb-slider');
 const paintingGrid = require('./modules/painting-grid');
 
-const { updatePaintingGridSize, updatePaintingGridColor } = paintingGrid(document);
+const {
+  updatePaintingGridSize,
+  updatePaintingGridColor,
+  downloadPainting
+} = paintingGrid(document);
 const { sliderRange, fixSlider } = rgbSlider(document);
 
 handleSliderChange();
@@ -31,3 +35,7 @@ sizeInputs[1].oninput = function(e) {
   sizeInputs[0].value = e.target.value;
   updatePaintingGridSize(sizeInputs[0].value);
 }
+
+document.querySelector('.button-download').addEventListener('click', function() {
+  downloadPainting();
+}, false);

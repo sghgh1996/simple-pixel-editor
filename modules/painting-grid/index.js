@@ -54,7 +54,21 @@ let paintingGrid = function(document) {
     paintingColor = color;    
   }
 
-  return { updatePaintingGridSize, updatePaintingGridColor };
+  function downloadPainting () {
+    let downloadLink = document.createElement('a');
+    downloadLink.href = paintingCanvas.toDataURL();
+    downloadLink.download = 'painting.png';
+
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  }
+
+  return {
+    updatePaintingGridSize,
+    updatePaintingGridColor,
+    downloadPainting
+  };
 }
 
 module.exports = paintingGrid;
